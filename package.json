@@ -4,6 +4,7 @@
   "description": "First Rest API with Nodejs Express",
   "main": "index.js",
   "scripts": {
+    "test": "mocha --timeout 10000",
     "start": "nodemon app.js"
   },
   "author": "",
@@ -15,5 +16,10 @@
     "express": "^4.17.1",
     "mongoose": "^5.11.11",
     "nodemon": "^2.0.7"
+  },
+  "devDependencies": {
+    "mocha": "^8.2.1",
+    "should": "^13.2.3",
+    "supertest": "^6.0.1"
   }
 }

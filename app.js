@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const app = express();
+let port = 3000;
 require('dotenv/config');
 
 //Import Routes
@@ -19,7 +20,7 @@ app.use('/posts', postsRoute);
 
 //ROUTES
 app.get('/', (req, res) => {
-    res.send('we are on homes');
+    res.send('yes, it works!');
 });
 
 
@@ -30,4 +31,8 @@ mongoose.connect(
     () => console.log('Connected to DB!')
 );
 //Lisiting to server
-app.listen(3000);
+app.listen(port, function(){
+    console.log("Listening on port " + port);
+});
+
+module.exports = app; //for test purpose
