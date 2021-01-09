@@ -1,0 +1,19 @@
+{
+  "name": "first-node",
+  "version": "1.0.0",
+  "description": "First Rest API with Nodejs Express",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenvs": "^1.0.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.11",
+    "nodemon": "^2.0.7"
+  }
+}
